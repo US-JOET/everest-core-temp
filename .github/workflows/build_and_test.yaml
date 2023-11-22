@@ -55,8 +55,9 @@ jobs:
           --volume "$(pwd):/ext" \
           --name compile-container \
           build-kit run-script compile
-      - name: Unit tests and install
+      - name: Ensure gcovr is available
         uses: threeal/gcovr-action@v1.0.0
+      - name: Unit tests and install
         run: |
           docker commit compile-container build-image
           docker run \
