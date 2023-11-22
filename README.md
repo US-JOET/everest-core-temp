@@ -1,4 +1,5 @@
 # everest-core
+![build and test badge](https://github.com/US-JOET/everest-core-temp/actions/workflows/build_and_test.yaml/badge.svg?branch=main)
 
 This is the main part of EVerest containing the actual charge controller logic included in a large set of modules.
 
