@@ -56,6 +56,7 @@ jobs:
           --name compile-container \
           build-kit run-script compile
       - name: Unit tests and install
+        uses: threeal/gcovr-action@v1.0.0
         run: |
           docker commit compile-container build-image
           docker run \
