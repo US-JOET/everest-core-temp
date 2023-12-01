@@ -1,5 +1,6 @@
 #!/bin/sh
 
+apk update && apk add gcovr
 
 cmake \
     -B build \

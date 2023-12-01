@@ -49,12 +49,6 @@ jobs:
         run: |
           docker pull --quiet ghcr.io/everest/build-kit-alpine:latest
           docker image tag ghcr.io/everest/build-kit-alpine:latest build-kit
-      - name: Temporarially add gcovr dependency
-        run: |
-          docker run \
-          --volume "$(pwd):/ext" \
-          --name compile-container \
-          build-kit /sbin/apk update && /sbin/apk add gcovr
       - name: Compile
         run: |
           docker run \
