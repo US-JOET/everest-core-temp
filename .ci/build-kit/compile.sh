@@ -1,5 +1,7 @@
 #!/bin/sh
 
+apt update && apt install -y gcovr
+
 cmake \
     -B build \
     -S "$EXT_MOUNT/source" \

@@ -38,7 +38,7 @@ option(EVEREST_ENABLE_RUN_SCRIPT_GENERATION "Enables the generation of run scrip
 
 # This is a flag for building development tests, but not necessarily to run them, for expample in case
 # tests requires hardware.
-option(BUILD_DEV_TESTS "Build dev tests" OFF)
+option(BUILD_DEV_TESTS "Build dev tests" ON)
 
 find_package(Boost
     COMPONENTS
