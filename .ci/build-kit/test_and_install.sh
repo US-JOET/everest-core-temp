@@ -1,6 +1,5 @@
 #!/bin/sh
 
-apt update && apt install -y gcovr
 
 # ninja -j$(nproc) -C build tests
 ninja -j$(nproc) -C build install
