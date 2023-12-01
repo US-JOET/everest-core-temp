@@ -55,7 +55,7 @@ jobs:
           --volume "$(pwd):/ext" \
           --name compile-container \
           --entrypoint /sbin/apk update && /sbin/apk add gcovr \
-	  build-kit
+          build-kit 
       - name: Compile
         run: |
           docker run \
