@@ -54,7 +54,7 @@ jobs:
           docker run \
           --volume "$(pwd):/ext" \
           --name compile-container \
-          build-kit apk update && apk add gcovr
+          build-kit /sbin/apk update && /sbin/apk add gcovr
       - name: Compile
         run: |
           docker run \
