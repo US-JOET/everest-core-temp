@@ -1,6 +1,6 @@
 #!/bin/sh
 
-apk update && apk add gcovr && apk add --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing/ lcov
+apk update && apk add gcovr gtest-dev && apk add --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing/ lcov
 
 cmake \
     -B build \
