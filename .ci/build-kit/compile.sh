@@ -8,4 +8,4 @@ cmake \
     -DISO15118_2_GENERATE_AND_INSTALL_CERTIFICATES=OFF \
     -DCMAKE_INSTALL_PREFIX="$WORKSPACE_PATH/dist"
 
-ninja -j$(nproc) -C build
+ninja -j$(nproc) -C build install
